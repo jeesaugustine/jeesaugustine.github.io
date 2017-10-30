@@ -2,7 +2,7 @@
 	<head>
 		<title>Jees Augustine</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+		<link rel="stylesheet" href="/CSS/main.css">
 	</head>
 	<body>
 		<nav>
