@@ -4,28 +4,45 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" href="CSS/main.css">
 		<style>
-#customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
+	#courses {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	#courses td, #courses th {
+    	border: 1px solid #ddd;
+    	padding: 8px;
+	}
+	#courses tr:nth-child(even){background-color: #f2f2f2;}
+	#courses tr:hover {background-color: #ddd;}
+	#courses th {
+    	padding-top: 12px;
+    	padding-bottom: 12px;
+    	text-align: left;
+    	background-color: #4CAFFF;
+    	color: white;
+	}
+	/*New line */
+	#others {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
 
-#customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
+	}
+	#others td, #others th {
+    	border: 1px solid #dde;
+    	padding: 8px;
+	}
+	#others tr:nth-child(even){background-color: #f1f1f1;}
+	#others tr:hover {background-color: #dde;}
+	#others th {
+    	padding-top: 12px;
+    	padding-bottom: 12px;
+    	text-align: left;
+    	background-color: #4CAF50;
+    	color: white;
+	}
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
 </style>
 
 	</head>
@@ -48,7 +65,7 @@
 			</div>
 		</div>
 		<!-- Band Members -->
-<table id="customers">
+<table id="courses">
   <tr>
   	<th>Course</th>
     <th>MOOC Platform</th>
@@ -83,5 +100,20 @@
 
 
 </table>
+<p>    </p>
+<table id="others">
+  <tr>
+  	<th>Course</th>
+    <th>MOOC Platform</th>
+    <th>University</th>
+    <th>Certificate Link</th>
+  </tr>
+  <tr>
+  	<td>Introduction to Philosophy</td>
+    <td>Coursera</td>
+    <td>The University of Edinburgh</td>
+    <td><a href="https://www.coursera.org/account/accomplishments/certificate/3JB2YEWJDA8R" target="_blank">Certificate</a></td>
+  </tr>
+  </table>
 
 </body>
