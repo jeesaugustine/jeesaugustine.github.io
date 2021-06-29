@@ -1,0 +1,41 @@
+<html>
+<head>
+<script language="JavaScript">
+
+// function to calculate local time
+// in a different city
+// given the city's UTC offset
+function calcTime(city, offset, working) {
+
+    // create Date object for current location
+    d = new Date();
+    
+    // convert to msec
+    // add local time zone offset 
+    // get UTC time in msec
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    
+    // create new Date object for different city
+    // using supplied offset
+    nd = new Date(utc + (3600000*offset));
+    
+    // return time as a string
+    return "The local time in " + city + " is " + nd.toLocaleString() + working;
+
+}
+
+
+
+// get Hyderabad time
+alert(calcTime('[Vanessa] Hyderabad', '+5.5', ''));
+
+// get Portland time
+alert(calcTime('[Jees] Portland Oregon', '-7.0', ' [Working from 09:00 AM through 05:00 PM]'));
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
